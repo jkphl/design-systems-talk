@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Slideshow title</title>
+        <meta name="description" content="Slideshow description">
+        <style>@font-face{font-family:'Neighbourhood';src:url("css/fonts/neighbourhood.eot");src:url("css/fonts/neighbourhood.eot?#iefix") format("embedded-opentype"),url("css/fonts/neighbourhood.woff2") format("woff2"),url("css/fonts/neighbourhood.woff") format("woff"),url("css/fonts/neighbourhood.ttf") format("truetype");font-weight:normal;font-style:normal}html,body{height:100%;overflow:hidden}html.miniatures,.miniatures html,body.miniatures,.miniatures body{height:auto;overflow:visible}body{overflow:hidden;background:#0f7595;color:#fff;font-family:Neighbourhood,sans-serif;font-size:4vmin;line-height:1.5}.miniatures body{cursor:default !important;padding:3vh 3vw}*{box-sizing:border-box;padding:0;margin:0}h1,h2,h3,h4,h5,h6{max-width:80vw;line-height:1;font-weight:normal}h1{font-size:12vw;line-height:.8}h2{font-size:8vw;margin:0 0 .3em -.06em;position:relative;z-index:99}h2::after{content:'';position:absolute;height:.7vmin;width:12vw;bottom:-.08em;background-color:#fff;border-radius:.35vmin}.left h2::after{left:.06em}.right h2::after{right:.06em}.center h2::after{left:50%;margin-left:-6vw}ol{margin-left:-.8em}a{color:#fff}footer a{text-decoration:none}ul{list-style-type:none}.slides{display:block;position:absolute;width:100%;height:100%;overflow:hidden;list-style-type:none;font-weight:normal;margin:0;padding:0}.miniatures .slides{position:static;display:flex;flex-wrap:wrap;justify-content:space-between;overflow:visible;height:auto}.slides>li{display:flex;position:absolute;width:100vw;height:100vh;color:#fff;background-color:#0f7595;background-image:radial-gradient(ellipse farthest-corner, rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 100%);opacity:0;transition:opacity 200ms ease;padding:10vh 10vw}.miniatures .slides>li{position:relative;display:block !important;opacity:1;box-shadow:0.5vw 0.5vw 3vw rgba(50,50,50,0.5);cursor:pointer;-webkit-transform:scale(0.3);transform:scale(0.3);margin:-34vh -36vw}.slides>li>*{width:100%;background-repeat:no-repeat}.slides>li>* section::before{content:'';display:block;position:absolute;width:100%;height:100%;top:0;left:0;background-size:cover;background-repeat:no-repeat;background-position:center center;z-index:-1}.slides>li>*>p,.slides>li>*>dl,.slides>li>*>ul,.slides>li>*>ol,.slides>li>*>div{max-width:64em}.slides>li>*>*+p,.slides>li>*>*+dl,.slides>li>*>*+ul,.slides>li>*>*+ol,.slides>li>*>*+div{margin-top:1em}.slides>li>*>ul+ul{margin-top:0}.slides>li.no-gradient{background-image:none}.slides>li.active{opacity:1;display:flex}.slides>li.active::before{display:none}.slides>li.left{text-align:left}.slides>li.center{text-align:center}.slides>li.right{text-align:right}.slides>li.top{align-items:flex-start}.slides>li.middle{align-items:center}.slides>li.bottom{align-items:flex-end}.slides>li li{line-height:1.4;margin:.5em 0 .5em 1em;text-indent:-1em}.slides>li li li{padding-left:1em;list-style-type:disc}.slides>li dt,.slides>li .dt{color:#ffe600;display:block}.slides>li dt{margin-top:.5em}.slides>li dd{padding-left:1em;margin-bottom:.5em}.slides>li .interactive{transition:opacity 200ms ease-in-out}.is-interactive .slides>li.step-0 .interactive,.is-interactive .slides>li.step-1 .interactive:nth-of-type(1n+2),.is-interactive .slides>li.step-2 .interactive:nth-of-type(1n+3),.is-interactive .slides>li.step-3 .interactive:nth-of-type(1n+4),.is-interactive .slides>li.step-4 .interactive:nth-of-type(1n+5),.is-interactive .slides>li.step-5 .interactive:nth-of-type(1n+6),.is-interactive .slides>li.step-6 .interactive:nth-of-type(1n+7),.is-interactive .slides>li.step-7 .interactive:nth-of-type(1n+8),.is-interactive .slides>li.step-8 .interactive:nth-of-type(1n+9),.is-interactive .slides>li.step-9 .interactive:nth-of-type(1n+10){opacity:0}footer{position:relative;margin-top:4em;padding-top:.8em}footer::before{content:'';position:absolute;height:.5vmin;width:12vw;top:0;background-color:#fff;border-radius:.25vmin}em{font-style:normal;font-weight:bold;color:#ffe600}.cover{position:absolute;width:100%;height:100%;top:0;left:0;background-size:cover;background-repeat:no-repeat;background-position:center center}.check{background:transparent url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20474.8%20474.801%22%20fill%3D%22%232b242b%22%3E%3Cpath%20d%3D%22M396.283%20257.097c-1.14-.575-2.282-.862-3.433-.862-2.478%200-4.661.951-6.563%202.857l-18.274%2018.271c-1.708%201.715-2.566%203.806-2.566%206.283v72.513c0%2012.565-4.463%2023.314-13.415%2032.264-8.945%208.945-19.701%2013.418-32.264%2013.418H82.226c-12.564%200-23.319-4.473-32.264-13.418-8.947-8.949-13.418-19.698-13.418-32.264V118.622c0-12.562%204.471-23.316%2013.418-32.264%208.945-8.946%2019.7-13.418%2032.264-13.418H319.77c4.188%200%208.47.571%2012.847%201.714%201.143.378%201.999.571%202.563.571%202.478%200%204.668-.949%206.57-2.852l13.99-13.99c2.282-2.281%203.142-5.043%202.566-8.276-.571-3.046-2.286-5.236-5.141-6.567-10.272-4.752-21.412-7.139-33.403-7.139H82.226c-22.65%200-42.018%208.042-58.102%2024.126C8.042%2076.613%200%2095.978%200%20118.629v237.543c0%2022.647%208.042%2042.014%2024.125%2058.098%2016.084%2016.088%2035.452%2024.13%2058.102%2024.13h237.541c22.647%200%2042.017-8.042%2058.101-24.13%2016.085-16.084%2024.134-35.45%2024.134-58.098v-90.797c-.002-3.994-1.915-6.752-5.72-8.278z%22%2F%3E%3Cpath%20d%3D%22M467.95%2093.216l-31.409-31.409c-4.568-4.567-9.996-6.851-16.279-6.851-6.275%200-11.707%202.284-16.271%206.851L219.265%20246.532l-75.084-75.089c-4.569-4.57-9.995-6.851-16.274-6.851-6.28%200-11.704%202.281-16.274%206.851l-31.405%2031.405c-4.568%204.568-6.854%209.994-6.854%2016.277%200%206.28%202.286%2011.704%206.854%2016.274l122.767%20122.767c4.569%204.571%209.995%206.851%2016.274%206.851%206.279%200%2011.704-2.279%2016.274-6.851l232.404-232.403c4.565-4.567%206.854-9.994%206.854-16.274s-2.283-11.706-6.851-16.273z%22%2F%3E%3C%2Fsvg%3E") left center no-repeat;padding-left:1.5em;background-size:auto 60%}.ref{position:absolute;bottom:10vh;left:10vw;right:10vw;opacity:.3}.tagline,.big{font-size:4vw}.very-big{font-size:7vw}.tagline{margin-top:0 !important}blockquote{margin:0}blockquote p{line-height:1.2;font-size:5vw}blockquote b{color:#ffe600}blockquote::before{font-size:40vw;content:"„";float:left;line-height:0;height:.5em;shape-outside:circle(50%);margin:-8vw 4vw 0 -6vw;color:#ffe600}blockquote .author{text-align:center;margin-top:2em;font-size:3vmin}.blockquote img{float:left;max-width:20vw;border-radius:50%;margin-right:5vw;shape-outside:circle(50%)}.blockquote blockquote::before{display:none}@media print{@page{size:A4 landscape;margin:0;padding:0}html,body,.slides{height:auto;overflow:visible;margin:0;padding:0}.slides{position:static;width:297mm;height:auto}.slides>li{position:relative;display:table !important;height:210mm;opacity:1}.slides>li:first-child{display:none !important}.slides>li section ul,.slides>li section p{width:70vw}.slides>li>section::before{display:none !important}}.separate{margin-top:2em !important}.slides>li ul{position:relative;padding-left:1em}.slides>li li{margin:.5em 0;text-indent:0}.slides>li li::before{content:'›';position:absolute;left:0}.slides>li li li{padding-left:0;list-style-type:none}.slides>li li li::before{content:'•'}h3{letter-spacing:.01em;color:#ffe600;line-height:1.2}img{max-width:100%;height:auto;vertical-align:middle}iframe{width:100%;height:100%}strong,abbr{font-weight:normal;color:#ffe600}abbr::after{color:currentColor;content:" (" attr(title) ")"}twitterwidget{margin-left:auto;margin-right:auto;-webkit-transform:scale(1.5) rotate(0deg) !important;transform:scale(1.5) rotate(0deg) !important}[data-theme=secondary]{background-color:#d34 !important}[data-theme=tertiary]{background-color:#012340 !important}[data-theme=info]{background-color:#2b242b !important}[data-theme=white]{background-color:#fff !important}[data-theme=mint]{background-color:#84ecff !important}[data-theme=ndf]{background-color:#ffe600 !important}[data-theme=white] *,[data-theme=white] a,[data-theme=mint] *,[data-theme=mint] a,[data-theme=ndf] *,[data-theme=ndf] a{color:#2b242b !important}[data-theme=white] h2::after,[data-theme=mint] h2::after,[data-theme=ndf] h2::after{background-color:#2b242b}figure{width:100%}figure ul{display:flex;flex-wrap:wrap;justify-content:space-between;margin:0;padding:0 !important;list-style-type:none}figure li{padding:0 !important;margin:0 0 .75em 0 !important;text-indent:0 !important}figure li::before{display:none}figure figcaption{padding:0;margin:0}[data-images="3"] li{flex-basis:48%}@media (min-aspect-ratio: 2 / 3){[data-images="3"] li{flex-basis:31%}}h2 small{font-size:50%}em{color:#ffe600;font-weight:normal}q::before{content:"»"}q::after{content:"«"}.polaroid img{max-width:30vw;max-height:70vh;background:white;display:inline;float:left;margin:0 15px 30px;padding:10px 10px 25px;text-align:center;text-decoration:none;box-shadow:0 4px 6px rgba(0,0,0,0.3);transition:all .15s linear;z-index:0;position:relative}
+</style>
+    </head>
+    <body class="h-entry">
+            <ol class="slides">
+                    <li id="slide-0" class="left middle " data-title="Start">
+                            <section>
+                                <h1 id="design-mit-system">Design mit System</h1>
+<p class="tagline">Überlebenshandbuch für und mit Pattern Libraries</p>
+
+                                    <footer><div class="p-author h-card">
+Webkongress Erlangen 2018<br/>
+<a href="https://jkphl.is" target="_blank" rel="me"><span class="p-given-name">Joschi</span> <span class="p-family-name">Kuphal</span></a> · <a href="https://twitter.com/jkphl" rel="me" target="_blank">@jkphl</a>
+</div>
+</footer>
+                            </section>
+                    </li>
+                    <li id="slide-1" class="left top "
+                        data-theme="info" data-title="introduction">
+                            <section>
+                                <h2 id="-ber-mich">Über mich</h2>
+<ul>
+<li>Erste Codezeilen als 10-Jähriger</li>
+<li>Websites seit 1995</li>
+<li>Ausbildung im Architektur- und Designumfeld</li>
+<li>Agentur seit 2000</li>
+<li>Faible für Systematik</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-2" class="left top "
+                        data-theme="info" data-title="Agenda">
+                            <section>
+                                <h2 id="inhalt">Inhalt</h2>
+<dl>
+    <dt>1. Design System, Pattern Library & Co.</dt>
+    <dd>
+        <ul>
+            <li>Was, woher und wozu?</li>
+            <li>Nutzen, Herausforderungen & Anwendungsszenarien</li>
+        </ul>
+    </dd>
+    <dt>2. Pattern Library in der Praxis</dt>
+    <dd>
+        <ul>
+            <li>Am Beispiel des Nürnberg Digital Festivals</li>
+            <li>Live-Anbindung TYPO3 ↔ Fractal</li>
+            <li>Aufbau & Nutzung</li>
+        </ul>
+    </dd>
+</dl>
+
+                            </section>
+                    </li>
+                    <li id="slide-3" class="left middle "
+                        data-theme="secondary" data-title="Design System, Pattern Library &amp; Co.">
+                            <section>
+                                <h2 id="design-system-br-pattern-library-co-">Design System,<br>Pattern Library &amp; Co.</h2>
+<p>Herkunft, Merkmale &amp; Anwendungsszenarien</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-4" class="left middle "
+                        data-theme="tertiary" data-title="Gestaltungsrichtlinien im Print">
+                            <section>
+                                <h2 id="print">Print</h2>
+<p>Gestaltungsrichtlinien für die klassischen Medien</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-5" class="left top " data-title="Styleguides &amp; Brand Manuals im Print">
+                            <section>
+                                <h2 id="styleguide-brand-manual">Styleguide / Brand Manual</h2>
+<h3 id="inhalt">Inhalt</h3>
+<ul>
+<li>Verwendung von Gestaltungselementen</li>
+<li>Schriftart, Schriftgrad &amp; Zeilenabstand</li>
+<li>Satzspiegel &amp; Gliederung</li>
+<li>Bildsprache</li>
+<li>Papiersorte &amp; -format</li>
+<li>Druckfarben, -techniken und Veredelungen</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-6" class="left top " data-title="Zielsetzungen von Styleguides &amp; Brand Manuals">
+                            <section>
+                                <h2 id="styleguide-brand-manual">Styleguide / Brand Manual</h2>
+<h3 id="zielsetzungen">Zielsetzungen</h3>
+<ul>
+<li>Dokumentation &amp; Kommunikation eines Corporate Designs</li>
+<li>Entwicklung einer Corporate Identity</li>
+<li>medienübergreifend kohärente, konsistente Gestaltung</li>
+<li>Reproduzierbarkeit, Berechenbarkeit, Vereinfachung</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-7" class="left top " data-title="NASA Graphics Standards Manual">
+                            <section>
+                                <figure>
+    <ul class="static" data-images="3">
+        <li><img src="images/nasa_1.jpg" alt="Cover of the NASA Graphics Standards Manual, 1976"></li>
+        <li><img src="images/nasa_2.jpg" alt="NASA logo usage"></li>
+        <li><img src="images/nasa_3.jpg" alt="NASA Grid System"></li>
+    </ul>
+    <figcaption>NASA Graphics Standards Manual, 1976</figcaption>
+</figure>
+
+                            </section>
+                    </li>
+                    <li id="slide-8" class="left top " data-title="Entstehung von Styleguides &amp; Brand Manuals">
+                            <section>
+                                <h2 id="styleguide-brand-manual">Styleguide / Brand Manual</h2>
+<h3 id="entwicklung">Entwicklung</h3>
+<ul>
+<li>manuell in einer Designphase</li>
+<li>tendenziell <em>vor</em> der Ableitung von Medienprodukten</li>
+<li>häufig sich-selbst-belegend</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-9" class="left middle "
+                        data-theme="tertiary" data-title="Gestaltungsrichtlinien in den Digitalen Medien">
+                            <section>
+                                <h2 id="digitale-medien">Digitale Medien</h2>
+<p>Übertragung auf interaktive Inhalte</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-10" class="left top " data-title="Styleguides &amp; Brand Manuals im Print">
+                            <section>
+                                <h2 id="styleguide-small-digital-small-">Styleguide <small>(digital)</small></h2>
+<h3 id="zielsetzungen">Zielsetzungen</h3>
+<ul>
+<li>grundsätzlich analog zu Print</li>
+<li>Ausdehnung auf Interface-Module und Richtlinien zu deren Nutzung</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-11" class="left top " data-title="Unterschied Styleguides Digital &amp; Print">
+                            <section>
+                                <h2 id="styleguide-small-digital-small-">Styleguide <small>(digital)</small></h2>
+<h3 id="besonderheiten">Besonderheiten</h3>
+<ul>
+<li>zustandsreicher</li>
+<li>kontextabhängig<ul>
+<li>Resonsive Design</li>
+<li>unterschiedliche Ausgabeplattformen</li>
+<li>Progressive Enhancement</li>
+</ul>
+</li>
+<li>potenziell schnelllebiger</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-12" class="left top " data-title="Yahoo! Design Pattern Library">
+                            <section>
+                                <figure>
+    <ul class="static" data-images="3">
+        <li><img src="images/yahoo_1.jpg" alt="Yahoo! Design Pattern Library Homepage"></li>
+        <li><img src="images/yahoo_2.jpg" alt="Module Tabs Pattern"></li>
+        <li><img src="images/yahoo_3.jpg" alt="Drag and Drop Pattern"></li>
+    </ul>
+    <figcaption>Yahoo! Design Pattern Library, 2006</figcaption>
+</figure>
+
+                            </section>
+                    </li>
+                    <li id="slide-13" class="left top " data-title="Entstehung von Styleguides &amp; Brand Manuals">
+                            <section>
+                                <h2 id="styleguide-small-digital-small-">Styleguide <small>(digital)</small></h2>
+<h3 id="entwicklung">Entwicklung</h3>
+<dl>
+    <dt>als Arbeitswerkzeug</dt>
+    <dd>parallel zum Produkt, begleitend</dd>
+    <dt>zur Dokumentation</dt>
+    <dd>nach Fertigstellung (analog Print)</dd>
+</dl>
+
+
+                            </section>
+                    </li>
+                    <li id="slide-14" class="left middle "
+                        data-theme="tertiary" data-title="Living Styleguide">
+                            <section>
+                                <h2 id="living-styleguide">Living Styleguide</h2>
+<ul>
+<li>verändert sich mit dem Produkt</li>
+<li>gibt den aktuellen Entwicklungsstand wieder</li>
+<li>laufende oder möglichst zeitnahe Aktualisierung</li>
+<li>toolgestützte Erzeugung</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-15" class="left top " data-title="CSS-Dokumentationsparser">
+                            <section>
+                                <h2 id="living-styleguide">Living Styleguide</h2>
+<h3 id="css-dokumentationsparser">CSS-Dokumentationsparser</h3>
+<ul>
+<li>erzeugt HTML-Dokument(e) mit CSS-Stil-Inventar</li>
+<li>Extraktion aus CSS-Kommentaren</li>
+<li>z.B. <a href="http://warpspire.com/kss">KSS</a>, <a href="https://github.com/DSSWG/DSS">DSS</a></li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-16" class="left top " data-title="CSS-Dokumentationsparser">
+                            <section>
+                                <h2 id="living-styleguide">Living Styleguide</h2>
+<h3 id="styleguide-generatoren">Styleguide-Generatoren</h3>
+<ul>
+<li>erzeugt eine HTML-Dokumentation mit Code-Beispielen (HTML, CSS)</li>
+<li>Templating-Prozess ähnlich Static Site Generator</li>
+<li>z.B. <a href="https://github.com/adactio/Pattern-Primer">Pattern Primer</a>, <a href="http://patternlab.io/">Pattern Lab</a></li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-17" class="left top " data-title="CSS-Dokumentationsparser">
+                            <section>
+                                <h2 id="living-styleguide">Living Styleguide</h2>
+<h3 id="styleguide-plattformen">Styleguide-Plattformen</h3>
+<ul>
+<li>dynamische Anwendungen</li>
+<li>Live-Abgleich mit dem aktuellen Entwicklungsstand</li>
+<li>Dokumentation, Templating, Plugins …</li>
+<li>z.B. <a href="https://github.com/lonelyplanet/rizzo">Rizzo</a> (Lonely Planet), <a href="https://sourcejs.com/">SourceJS</a>, <a href="https://uiengine.uix.space">UIengine</a></li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-18" class="left middle "
+                        data-theme="tertiary" data-title="Komponenten">
+                            <section>
+                                <h2 id="komponenten">Komponenten</h2>
+<p>Modulare Architektur statt <q>Spaghetti-Websites</q></p>
+
+                            </section>
+                    </li>
+                    <li id="slide-19" class="left top " data-title="Component Driven Design / Development">
+                            <section>
+                                <h2 id="komponenten">Komponenten</h2>
+<ul>
+<li>Component-Driven Design / Development</li>
+<li>Wiederverwendbare Bausteine, z.B. Menü, Tab-Navigation, Akkordeon, Karussell / Slider  <ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Statische Assets (Bilder, Schriftarten, etc.)</li>
+</ul>
+</li>
+<li>Anwendungen ästhetischer, funktionaler und übergeordneter Gestaltungsrichtlinien</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-20" class="left middle "
+                        data-theme="tertiary" data-title="Patterns">
+                            <section>
+                                <h2 id="patterns">Patterns</h2>
+<p><em><code>noun | pat·tern | \ˈpa-tərn\</code></em><br/>
+Modell, Struktur, Schema; Muster, Design, Ornament; Verhaltensmuster</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-21" class="left top " data-title="Wahrnehmungsmuster (Perceptive Patterns)">
+                            <section>
+                                <h2 id="wahrnehmungsmuster">Wahrnehmungsmuster</h2>
+<h3 id="perceptive-patterns">Perceptive Patterns</h3>
+<ul>
+<li>Stilangaben: visuell, auditiv, Ausdrucksformen</li>
+<li>beschreiben die Art und Persönlichkeit eines digitalen Produkts und seiner Komponenten</li>
+<li>Analogie: Adjektive, z.B. <q>auffällig</q>, <q>großzügig</q>, <q>ruhig</q>, <q>untergeordnet</q></li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-22" class="left top " data-title="Beispiele für Wahrnehmungsmuster">
+                            <section>
+                                <h2 id="wahrnehmungsmuster">Wahrnehmungsmuster</h2>
+<h3 id="beispiele">Beispiele</h3>
+<ul>
+<li>Farben</li>
+<li>Typographie (Schrift, Absätze, Inline-Stile, Links, Aufzählungen, Zitate, etc.) </li>
+<li>Raster, Dimensionen &amp; Abstände</li>
+<li>Interaktive Zustände, Animationen, Audio</li>
+<li>Fotos, Illustrationen, Ikonografie</li>
+<li>Ansprache &amp; Ausdrucksformen (Microcopy)</li>
+<li>Statische Assets (Logos, Key Visuals, Claims, etc.)</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-23" class="left top " data-title="Wahrnehmungsmuster im Web-Kontext">
+                            <section>
+                                <h2 id="wahrnehmungsmuster">Wahrnehmungsmuster</h2>
+<h3 id="im-web-kontext">Im Web-Kontext</h3>
+<ul>
+<li>Stile (CSS)</li>
+<li>Assets (z.B. Icons, Logos, Claims, etc.)</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-24" class="left top " data-title="Verhaltensmuster (Functional Patterns)">
+                            <section>
+                                <h2 id="verhaltensmuster">Verhaltensmuster</h2>
+<h3 id="functional-patterns">Functional Patterns</h3>
+<ul>
+<li>konkrete, nutzbare Bausteine eines Interfaces</li>
+<li>ermöglichen oder unterstützen bestimmtes Nutzerverhalten</li>
+<li>Analogie: Verben / Nomen, z.B. <q>Informieren</q>, <q>Navigieren</q>, <q>Auswählen</q>, <q>Senden</q>  </li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-25" class="left top " data-title="Beispiele für Verhaltensmuster">
+                            <section>
+                                <h2 id="verhaltensmuster">Verhaltensmuster</h2>
+<h3 id="beispiele">Beispiele</h3>
+<ul>
+<li>Textdarstellungen &amp; Abbildungen</li>
+<li>Strukturelemente (Kacheln, Mehrspaltigkeit, etc.)</li>
+<li>Navigation &amp; Call-To-Actions</li>
+<li>Dialoge, Formulare &amp; Formularelemente </li>
+<li>Interaktive Module (Karussell / Slider, Akkordeon)</li>
+<li>Fortschritts- &amp; Zustandsanzeigen</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-26" class="left top " data-title="Verhaltensmuster im Web-Kontext">
+                            <section>
+                                <h2 id="verhaltensmuster">Verhaltensmuster</h2>
+<h3 id="im-web-kontext">Im Web-Kontext</h3>
+<ul>
+<li>Struktur (HTML)</li>
+<li>Stile (CSS)</li>
+<li>Interaktion (JavaScript)</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-27" class="left top " data-title="Komplexe Muster: Interaktive Abläufe">
+                            <section>
+                                <h2 id="komplexe-muster">Komplexe Muster</h2>
+<h3 id="interaktive-abl-ufe">Interaktive Abläufe</h3>
+<ul>
+<li>Formularstrecken mit Fehler- und Erfolgsmeldungen</li>
+<li>domänenspezifische Abläufe, z.B. Einstellen einer Kleinanzeige, Ticketbuchung</li>
+<li>E-Commerce-Abläufe</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-28" class="left top " data-title="Komplexe Muster: Persuasive Patterns">
+                            <section>
+                                <h2 id="komplexe-muster">Komplexe Muster</h2>
+<h3 id="persuasive-patterns">Persuasive Patterns</h3>
+<ul>
+<li>Anmelde- bzw. Kontoeröffnungsvorgänge</li>
+<li>Onboarding- und <q>Getting Started</q>-Strecken</li>
+<li><q>Ongoing Engagement Patterns</q></li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-29" class="left top " data-title="Komplexe Muster im Web-Kontext">
+                            <section>
+                                <h2 id="komplexe-muster">Komplexe Muster</h2>
+<h3 id="im-web-kontext">Im Web-Kontext</h3>
+<ul>
+<li>Struktur, Stile, Interaktion (HTML + CSS + JavaScript + ?)</li>
+<li>User Experience (Psychologie)</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-30" class="left middle "
+                        data-theme="tertiary" data-title="Prinzipien, Strategien &amp; Leitfäden">
+                            <section>
+                                <h2 id="prinzipien-strategien-leitf-den">Prinzipien, Strategien &amp; Leitfäden</h2>
+<p>Motivation &amp; Haltungsgrundlagen</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-31" class="left top " data-title="Design-Prinzipien">
+                            <section>
+                                <h2 id="design-principles">Design Principles</h2>
+<h3 id="was-bedeutet-q-gutes-design-q-f-r-produkt-und-team-br-wie-wird-es-erreicht-">Was bedeutet <q>gutes Design</q> für Produkt und Team?<br>Wie wird es erreicht?</h3>
+<dl>
+    <dt>markenbezogen</dt>
+    <dd><q>Lucid, Animated, Unbreakable</q> (<a href="https://www.pinterest.com" target="_blank" rel="noopener nofollow">Pinterest</a>)</dd>
+    <dt>arbeitsweisebezogen</dt>
+    <dd><q>Do less, iterate, then iterate again</q> (<a href="https://gds.blog.gov.uk" target="_blank" rel="noopener nofollow">GDS</a>)</dd>
+    <dt>traditionsbezogen</dt>
+    <dd><q>Confidence, independence, honesty</q> (<a href="https://www.jackdaniels.com" target="_blank" rel="noopener nofollow">Jack Daniels</a>)</dd>
+</dl>
+
+                            </section>
+                    </li>
+                    <li id="slide-32" class="left top " data-title="Strategien">
+                            <section>
+                                <h2 id="strategien">Strategien</h2>
+<h3 id="konkrete-methoden-zur-unterst-tzung-erf-llung-des-produktzwecks">Konkrete Methoden zur Unterstützung &amp; Erfüllung des Produktzwecks</h3>
+<ul>
+<li>Technologie-Mix</li>
+<li>Vorgehensweisen im Detail, z.B. Font Loading, Barrierefreiheit, Testing</li>
+<li>Redaktionelle Stilmittel, z.B. Ansprache, Terminologie</li>
+<li>UX-Grundlagen, z.B. Personas, User Journeys </li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-33" class="left top " data-title="Richtlinien">
+                            <section>
+                                <h2 id="richtlinien">Richtlinien</h2>
+<ul>
+<li>dokumentierte Handlungsweisen, z.B. Anleitungen, Tutorials</li>
+<li>Leitfaden zum Umgang mit Design-Komponenten (Erzeugung, Pflege)</li>
+<li>Onboarding neuer Team-Mitglieder</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-34" class="left middle "
+                        data-theme="tertiary" data-title="Design System">
+                            <section>
+                                <h2 id="design-system">Design System</h2>
+<h3 id="sammlung-aller-produktrelevanten-gestaltungsgrundlagen">Sammlung aller produktrelevanten Gestaltungsgrundlagen</h3>
+<ul>
+<li>Prinzipien, Strategien &amp; Richtlinien</li>
+<li>Stile &amp; Assets (Wahrnehmungsmuster)</li>
+<li>Interface-Komponenten (Verhaltensmuster)</li>
+<li>UX-Konzepte (Komplexe Muster)</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-35" class="left middle "
+                        data-theme="tertiary" data-title="Pattern Library">
+                            <section>
+                                <h2 id="pattern-library">Pattern Library</h2>
+<h3 id="tool-gest-tzte-mehr-oder-weniger-umfassende-br-manifestierung-eines-design-systems">Tool-gestützte, mehr oder weniger umfassende<br>Manifestierung eines Design Systems</h3>
+<ul>
+<li>zur Dokumentation</li>
+<li>zur Entwicklung</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-36" class="center; middle " data-title="Stephen Hay über Pattern Libraries">
+                            <section>
+                                <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">Alright, if we get philosophical about it: a design system is an abstract construct, and manifested in the physical realm by the documentation that is often referred to as the &quot;system&quot;, while it only explains and exemplifies the system.</p>&mdash; Stephen Hay (@stephenhay) <a href="https://twitter.com/stephenhay/status/1032704967197556736?ref_src=twsrc%5Etfw">23. August 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                            </section>
+                    </li>
+                    <li id="slide-37" class="left top " data-title="Pattern Libraries zur Dokumentation &amp; Kommunikation: Szenario">
+                            <section>
+                                <h2 id="dokumentation-small-kommunikation-small-">Dokumentation <small>&amp; Kommunikation</small></h2>
+<h3 id="szenario">Szenario</h3>
+<ul>
+<li>Umfangreiche Markenwelten mit mehreren digitalen Produkten</li>
+<li>Verschiedene, ggf. verteilte Design- &amp; Entwicklungsteams</li>
+<li>Langfristige Nutzung</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-38" class="left top " data-title="Pattern Libraries zur Dokumentation &amp; Kommunikation: Zielsetzungen">
+                            <section>
+                                <h2 id="dokumentation-small-kommunikation-small-">Dokumentation <small>&amp; Kommunikation</small></h2>
+<h3 id="zielsetzungen">Zielsetzungen</h3>
+<ul>
+<li>Dokumentation der entwickelten Patterns</li>
+<li>Orientierung innerhalb der Markenwelt</li>
+<li>Onboarding von Design- &amp; Entwicklungsteams</li>
+<li>Handreichung für die Ableitung von digitalen Produkten</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-39" class="left top " data-title="Pattern Libraries zur Entwicklung &amp; Kollaboration: Szenario">
+                            <section>
+                                <h2 id="entwicklung-small-kollaboration-small-">Entwicklung <small>&amp; Kollaboration</small></h2>
+<h3 id="szenario">Szenario</h3>
+<ul>
+<li>als Werkbank, auch bereits in frühen Projektstadien</li>
+<li>Entwicklung eines Produkts</li>
+<li>Interdisziplinäre Teams (Konzept, Design, Entwicklung, Tests)</li>
+<li>Agile / iterative Arbeitsweise</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-40" class="left top " data-title="Pattern Libraries zur Entwicklung &amp; Kollaboration: Zielsetzungen">
+                            <section>
+                                <h2 id="entwicklung-small-kollaboration-small-">Entwicklung <small>&amp; Kollaboration</small></h2>
+<h3 id="zielsetzungen">Zielsetzungen</h3>
+<ul>
+<li>Einbindung von Stakeholdern in den Entwurfs- &amp; Entwicklungsprozess<br>(Auftraggeber, Konzepter, Designer, Entwickler, Tester, Redakteure, Nutzer)</li>
+<li>Kommunikation &amp; Kollaboration</li>
+<li>Validierung &amp; Tests</li>
+<li>Im Bestfall: <em>Single Source of Truth</em></li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-41" class="left top "
+                        data-theme="white" data-title="Pattern Library: Vorteile">
+                            <section>
+                                <h2 id="vorteile">Vorteile</h2>
+<ul>
+<li>interdisziplinäres Arbeiten, Rollenverteilung</li>
+<li>Defizite werden sichtbar, Wildwuchs wird entgegengewirkt</li>
+<li>Dokumentation von Anwendungsfällen &amp; Ausnahmen</li>
+<li>Führung bei der Entwicklung von Komponenten</li>
+<li>Anschaulichkeit unterstützt Refactoring / Anpassungen</li>
+<li>Für Agenturen: Entwicklung &amp; Evolution von Best Practices</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-42" class="left top "
+                        data-theme="white" data-title="Pattern Library: Voraussetzungen &amp; Herausforderungen">
+                            <section>
+                                <h2 id="herausforderungen">Herausforderungen</h2>
+<ul>
+<li>komponentenorientierte Entwicklungsstruktur &amp; Arbeitsweise</li>
+<li>muss für alle Stakeholder verständlich und intuitiv nutzbar sein</li>
+<li>nachträgliche Einführung bedeutet Mehraufwand</li>
+<li>Style Guide Enforcer (<q>Hausmeister</q>)</li>
+<li>Synchronizität von Produkt und Pattern Library</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-43" class="left top "
+                        data-theme="white" data-title="Pattern Library: Grenzen &amp; Schwachstellen">
+                            <section>
+                                <h2 id="grenzen-schwachstellen">Grenzen &amp; Schwachstellen</h2>
+<ul>
+<li>Pattern Library ≠ Design System</li>
+<li>sorgt nicht automatisch für Konsistenz, gutes Design oder ein perfektes Nutzererlebnis</li>
+<li>entfaltet seine Stärke nur durch den richtigen Umgang damit</li>
+<li>notwendig: Kosteneffizienz + Verbesserung des Produkts (Nutzererlebnis, Nutzerzufriedenheit)</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-44" class="left middle "
+                        data-theme="secondary" data-title="Pattern library">
+                            <section>
+                                <h2 id="pattern-library-br-in-der-praxis">Pattern Library<br>in der Praxis</h2>
+<p>TYPO3 ⚭ Fractal → Nürnberg Digital Festival</p>
+
+                            </section>
+                    </li>
+                    <li id="nueww-2018" class="left top no-gradient "
+                        data-theme="ndf" data-title="Nürnberg Web Week (2012-2017)">
+                            <section>
+                                <p><img src="images/nueww-2018.svg" alt="Nürnberg Web Week 2018"></p>
+<ul>
+<li>Community-Initiative zur Zusammenlegung bestehender, unabhängiger Webszene-Events in eine gemeinsame Veranstaltungswoche</li>
+<li>2012: 10 Events</li>
+<li>2017: 100+ Events / 8.000+ Teilnehmer</li>
+<li>2018: Erstmals offiziell 10 Tage, 170+ Events</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="ndf-2018" class="center middle no-gradient "
+                        data-theme="ndf" data-title="Nürnberg Digital Festival (ab 2018)">
+                            <section>
+                                <p><img src="images/ndf-2018.svg" alt="Nürnberg Digital Fetival 2018" title="Aktuell Umbenennung in Nürnberg Digital Festival"></p>
+
+                            </section>
+                    </li>
+                    <li id="slide-47" class="left top no-gradient "
+                        data-theme="ndf" data-title="Website der Nürnberg Web Week">
+                            <section>
+                                <h2 id="nueww-website">NUEWW-Website</h2>
+<ul>
+<li>Übernahme der Verantwortlichkeit zur Web Week 2013</li>
+<li>schnelle <a href="https://typo3.org">TYPO3</a>-Website in einer Nacht-und-Nebel-Aktion</li>
+<li>ehrenamtliche Betreuung &amp; Weiterentwicklung bis heute</li>
+<li>Anforderungen zusammen mit dem Format gewachsen, Generalüberholung lange überfällig</li>
+<li>Lastverteilung auf breiter aufgestelltes Team</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-48" class="left top no-gradient "
+                        data-theme="ndf" data-title="Website-Relaunch">
+                            <section>
+                                <h2 id="relaunch">Relaunch</h2>
+<ul>
+<li>Aktuelle <a href="https://typo3.org">TYPO3</a>-Version</li>
+<li>Pattern Library mit <a href="http://fractal.build">Fractal</a></li>
+<li>Moderne, solide Webtechnologie (aber keine Raketentechnik)</li>
+<li>API-Anbindung an externe Event-Management-Software </li>
+<li>Interdisziplinäres Team</li>
+<li>Iteratives Vorgehen</li>
+<li>Vorbildrolle in der Region</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-49" class="left top no-gradient "
+                        data-theme="ndf" data-title="Anforderungen an die NDF Pattern Library">
+                            <section>
+                                <h2 id="pattern-library">Pattern Library</h2>
+<ul>
+<li>Zentrale Arbeits- und Referenzplattform für alle Gewerke</li>
+<li>Single Source of Truth</li>
+<li>Immer 100% synchron mit dem Entwicklungsstand</li>
+<li>Dokumentationen für Redakteure</li>
+<li>Perspektivisch: Auch für Printprodukte</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-50" class="left top no-gradient polaroid"
+                        data-theme="ndf" data-title="NUEWW Website Allstars">
+                            <section>
+                                <h2 id="nueww-website-allstars">NUEWW Website Allstars</h2>
+<p><img src="images/allstars/balkon_schepp_andi_ingo.jpg" alt="NUEWW Website Allstars">
+<img src="images/allstars/weinberg_von_david.jpg" alt="NUEWW Website Allstars">
+<img src="images/allstars/strand_1.jpg" alt="NUEWW Website Allstars"></p>
+
+                            </section>
+                    </li>
+                    <li id="slide-51" class="left middle "
+                        data-theme="tertiary" data-title="Shared Language">
+                            <section>
+                                <h2 id="shared-language-small-1-5-small-">Shared Language <small>(1/5)</small></h2>
+<p>Entwickeln eines gemeinsamen Vokabulars</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-52" class="left top " data-title="Entwicklung der Shared Language">
+                            <section>
+                                <h2 id="shared-language">Shared Language</h2>
+<h3 id="entwicklung">Entwicklung</h3>
+<ul>
+<li>Produktmerkmale, -prozesse und -anforderungen</li>
+<li>projekt- und domänenspezifische Begrifflichkeiten</li>
+<li>muss für alle Disziplinen / Stakeholder funktionieren, sonst<br>→ Unverständnis<br>&nbsp;&nbsp;&nbsp;→ Fehlnutzung<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Verwilderung / Vernachlässigung / Ablehnung der Pattern Library</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-53" class="left top " data-title="Durchdachte Benennung von Design Patterns">
+                            <section>
+                                <h2 id="shared-language">Shared Language</h2>
+<h3 id="durchdachte-pattern-namen">Durchdachte Pattern-Namen</h3>
+<dl>
+    <dt>spiegeln den Zweck wieder, nicht die Präsentationsform</dt>
+    <dd><q>Progress toggle button</q> statt <q>Circle with a dot</q></dd>
+    <dt>inspirieren zur Nutzung</dt>
+    <dd><q>Spotlight</q> statt <q>Prominent header</q></dd>
+    <dt>haben Persönlichkeit und sind einprägsam</dt>
+    <dd><q>Boss & Minion Buttons</q> statt <q>Primary & Secondary Buttons</q></dd>
+</dl>
+
+                            </section>
+                    </li>
+                    <li id="slide-54" class="left top " data-title="Konsequente Nutzung der Shared Language">
+                            <section>
+                                <h2 id="shared-language">Shared Language</h2>
+<h3 id="konsequente-nutzung">Konsequente Nutzung</h3>
+<ul>
+<li>Benennung neuer Patterns in Team-Meetings</li>
+<li>Nutzung im täglichen Umgang</li>
+<li>Pattern Library Catch-Ups &amp; -Meetings</li>
+<li>Glossar zur Shared Language</li>
+<li>Pattern Wall</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-55" class="left top no-gradient polaroid"
+                        data-theme="ndf" data-title="NUEWW Website Allstars: Shared Language">
+                            <section>
+                                <h2 id="shared-language">Shared Language</h2>
+<p><img src="images/allstars/meeting_balkon_von_schepp.jpg" alt="NUEWW Website Allstars">
+<img src="images/allstars/schepp_ingo_balkon_postits.jpg" alt="NUEWW Website Allstars">
+<img src="images/allstars/arbeit_von_schepp.jpg" alt="NUEWW Website Allstars"></p>
+
+                            </section>
+                    </li>
+                    <li id="slide-56" class="left middle "
+                        data-theme="tertiary" data-title="Pattern-Identifikation">
+                            <section>
+                                <h2 id="patterns-small-2-5-small-">Patterns <small>(2/5)</small></h2>
+<p>Definition von Mustern &amp; Komponenten</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-57" class="left top " data-title="Ansätze zur Definition von Patterns">
+                            <section>
+                                <h2 id="patterns">Patterns</h2>
+<h3 id="ans-tze">Ansätze</h3>
+<dl>
+    <dt>1. Patterns First</dt>
+    <dd>Ableitung aus Produktzielen, Design Principles, Corporate Design<br>
+    iterativ und parallel zum Screen-Design (und davor)</dd>
+    <dt>2. Screen-Design (neu oder Bestand)</dt>
+    <dd>Pattern Map, Design Inventory, Mood Boards, Collagen, etc.</dd>
+</dl>
+
+                            </section>
+                    </li>
+                    <li id="slide-58" class="left top " data-title="Design Inventory">
+                            <section>
+                                <h2 id="patterns">Patterns</h2>
+<h3 id="design-inventory">Design Inventory</h3>
+<ul>
+<li>Zerlegen von Design-Ausdrucken in visuelle Module</li>
+<li>Identifikation funktionaler und ästhetischer Bausteine</li>
+<li>Ermitteln wiederkehrender Muster</li>
+<li>Separation nach Zweck &amp; Funktionsweise</li>
+<li>Gruppieren von Varianten</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-59" class="left top " data-title="Analyse der Inhaltsstruktur">
+                            <section>
+                                <h2 id="patterns">Patterns</h2>
+<h3 id="inhaltsstruktur-analyse">Inhaltsstruktur-Analyse</h3>
+<p><em>Bild</em></p>
+
+                            </section>
+                    </li>
+                    <li id="slide-60" class="left top "
+                        data-theme="ndf" data-title="Pattern Wall">
+                            <section>
+                                <h2 id="patterns">Patterns</h2>
+<h3 id="pattern-wall">Pattern Wall</h3>
+<p><em>Bild</em></p>
+
+                            </section>
+                    </li>
+                    <li id="slide-61" class="left middle "
+                        data-theme="tertiary" data-title="Pattern Library Tools">
+                            <section>
+                                <h2 id="tools-small-3-5-small-">Tools <small>(3/5)</small></h2>
+<p>Komponenten-Visualisierung und mehr</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-62" class="left top " data-title="Auswahl eines Pattern Library Tools">
+                            <section>
+                                <h2 id="tools">Tools</h2>
+<h3 id="pattern-library">Pattern Library</h3>
+<ul>
+<li>Große Anzahl von <a href="https://github.com/davidhund/styleguide-generators">Open-Source-Tools verfügbar</a></li>
+<li>Individuelle Auswahlkriterien<ul>
+<li>Technologie-Stack (Node.js, PHP, React, Vue.js, etc.)</li>
+<li>Schwerpunkt (Dokumentation / Entwicklung)</li>
+<li>Komponenten-Workflows</li>
+<li>Erweiterbarkeit</li>
+<li>etc.</li>
+</ul>
+</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-63" class="left top "
+                        data-theme="ndf" data-title="Fractal als Pattern Library Tool">
+                            <section>
+                                <h2 id="tools">Tools</h2>
+<h3 id="fractal-als-pattern-library">Fractal als Pattern Library</h3>
+<ul>
+<li>Node.js-Anwendung → Gulp-Workflow</li>
+<li>flexibel und technologieunabhängig</li>
+<li>Komponenten + Dokumentation</li>
+<li>Webserver &amp; statischer Export</li>
+<li>erweiterbar</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-64" class="left top "
+                        data-theme="ndf" data-title="TYPO3 als Content Management System">
+                            <section>
+                                <h2 id="tools">Tools</h2>
+<h3 id="typo3-als-content-management-system">TYPO3 als Content Management System</h3>
+<ul>
+<li>modernes, in PHP-implementiertes Open-Source-CMS</li>
+<li>funktionsreiche APIs</li>
+<li>erweiterbar durch individuelle <q>Extensions</q></li>
+<li>framework- und technologieunabhängig im Frontend</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-65" class="left top "
+                        data-theme="ndf" data-title="Herausforderungen bei der Kopplung von Fractal &amp; TYPO3">
+                            <section>
+                                <h2 id="tools">Tools</h2>
+<h3 id="herausforderungen">Herausforderungen</h3>
+<ul>
+<li>Fractal standardmäßig auf einfaches Templating ausgelegt (Handlebars)</li>
+<li>Fractal dateibasiert (JSON + Templates für Komponenten, Markdown für Dokumentation)</li>
+<li>TYPO3 kombiniert HTML-Rendering-Mechanismen<ul>
+<li>Fluid (Templates + View Helper)</li>
+<li>TypoScript (konfigurationsbasierrtes Rendering)</li>
+<li>Extbase-Plugins (MVC-Architektur)</li>
+<li>Form Framework, Custom Content Elements, HTTP-Requests, etc.</li>
+</ul>
+</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-66" class="left top "
+                        data-theme="ndf" data-title="Individuelle Extensions für TYPO3 &amp; Fractal">
+                            <section>
+                                <h2 id="tools">Tools</h2>
+<h3 id="typo3-fractal">TYPO3 ⚭ Fractal</h3>
+<ul>
+<li>Individuelle <a href="https://github.com/tollwerk/TYPO3-ext-tw_componentlibrary">TYPO3-Extension</a><ul>
+<li>Definition von Komponenten + Resourcen (Templates, CSS, JavaScript, etc.)</li>
+<li>Export eines JSON-Komponenten-Katalogs via CLI-API</li>
+</ul>
+</li>
+<li>Individuelle <a href="https://github.com/tollwerk/fractal-typo3">Fractal-Extension</a><ul>
+<li>Konsumiert JSON-Komponenten-Katalog</li>
+<li>TYPO3 als externer Template-Engine via HTTP</li>
+</ul>
+</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-66" class="left middle "
+                        data-theme="tertiary" data-title="Pattern-Struktur">
+                            <section>
+                                <h2 id="struktur-small-4-5-small-">Struktur <small>(4/5)</small></h2>
+<p>Organisation &amp; Navigation</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-68" class="left top " data-title="Strukturierungsansätze für Komponenten">
+                            <section>
+                                <h2 id="struktur">Struktur</h2>
+<h3 id="organisationsans-tze">Organisationsansätze</h3>
+<ul>
+<li>abhängig von Team und Tool</li>
+<li>einfache Liste oder hierarchisch gegliedert</li>
+<li>Sortierung nach Alphabet, Zweck, logischen Gruppierungen, etc.</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-69" class="left top no-gradient "
+                        data-theme="ndf" data-title="Strukturierungsansätze für Komponenten">
+                            <section>
+                                <h2 id="struktur">Struktur</h2>
+<p>Hierarchische Gliederung in <em>Bereiche</em> und <em>Funktionsgruppen</em></p>
+<table>
+<thead>
+<tr>
+<th align="left">Bereich</th>
+<th align="left">Doku</th>
+<th align="left">SVG</th>
+<th align="left">CSS/JS</th>
+<th align="left">HTML</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1. Principles</td>
+<td align="left">✅</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">2. Styles &amp; Assets</td>
+<td align="left"></td>
+<td align="left">✅</td>
+<td align="left">✅</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">3. Elements</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">✅</td>
+<td align="left">✅</td>
+</tr>
+<tr>
+<td align="left">4. Compositions</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">✅</td>
+</tr>
+<tr>
+<td align="left">5. TYPO3 Content Elements</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">✅</td>
+<td align="left">✅</td>
+</tr>
+</tbody></table>
+<p>Animiertes GIF mit Navigationsvorgang</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-70" class="left middle "
+                        data-theme="tertiary" data-title="Nutzung &amp; Betrieb">
+                            <section>
+                                <h2 id="nutzung-betrieb-small-5-5-small-">Nutzung &amp; Betrieb <small>(5/5)</small></h2>
+<p>Workflows &amp; Perspektiven</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-71" class="left top "
+                        data-theme="ndf" data-title="Komponentenanlage &amp; -verwaltung">
+                            <section>
+                                <h2 id="nutzung-betrieb">Nutzung &amp; Betrieb</h2>
+<h3 id="neue-komponenten">Neue Komponenten</h3>
+<ul>
+<li>Komponentendefinition im TYPO3<ul>
+<li>Benennung</li>
+<li>Typ &amp; Resourcen</li>
+</ul>
+</li>
+<li>Synchronisieren der Pattern Library</li>
+<li>Dokumentation &amp; Design</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-72" class="left top "
+                        data-theme="ndf" data-title="Komponentenentwicklung">
+                            <section>
+                                <h2 id="nutzung-betrieb">Nutzung &amp; Betrieb</h2>
+<h3 id="entwicklung">Entwicklung</h3>
+<ul>
+<li>Perspektiven: Template, Kontext, HTML</li>
+<li>Live-Rendering via TYPO3</li>
+<li>Varianten</li>
+<li>Rollenverteilung</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-73" class="left top "
+                        data-theme="ndf" data-title="Tests &amp; Analyse">
+                            <section>
+                                <h2 id="nutzung-betrieb">Nutzung &amp; Betrieb</h2>
+<h3 id="-bersicht-tests">Übersicht &amp; Tests</h3>
+<ul>
+<li>Status</li>
+<li>Abhängigkeiten</li>
+<li>Responsives Verhalten</li>
+<li>Barrierefreiheit via <a href="https://tenon.io">Tenon.io</a></li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-69" class="left middle "
+                        data-theme="tertiary" data-title="Potenziale">
+                            <section>
+                                <h2 id="potenzial">Potenzial</h2>
+<p>Ausblick &amp; Möglichkeiten</p>
+
+                            </section>
+                    </li>
+                    <li id="slide-76" class="left top " data-title="Ausblick &amp; Entwicklungsmöglichkeiten">
+                            <section>
+                                <h2 id="potenzial">Potenzial</h2>
+<ul>
+<li>Visual Regression Testing</li>
+<li>Print-Produkte integrieren</li>
+<li>Kommunikation-Features</li>
+<li>Anbindung an Design-Tools (Sketch, Adobe XD)</li>
+<li>Progressive Enhancement Stadien</li>
+</ul>
+
+                            </section>
+                    </li>
+                    <li id="slide-76" class="left middle "
+                        data-theme="info" data-title="Thanks!">
+                            <section>
+                                <h2 id="danke-">Danke!</h2>
+
+                            </section>
+                    </li>
+            </ol>
+        <script>(function(global,d){"use strict";var CYCLE=true;var slides=d.querySelectorAll(".slides > li");var current=0;var currentStep=0;var currentSteps=[];var minIndex=0;var maxIndex=slides.length-1;var interactive=false;var miniatures=false;var body;var listTypes=["ul","ol","dl"];function hasListAncestor(el,root){while(el.parentNode&&el.parentNode!==root){if(listTypes.indexOf(el.parentNode.tagName.toLowerCase())>=0){return true}el=el.parentNode}return false}function prepareInteractive(interactive,offset){var isDefinitionList=interactive.tagName.toLowerCase()==="dl";var interactives=0;for(var c=0,child;c<interactive.childNodes.length;++c){child=interactive.childNodes[c];if(child.nodeName.toLowerCase()==(isDefinitionList?"dt":"li")&&!child.classList.contains("static")){var interactiveClass="interactive-"+(offset+interactives++);child.classList.add("interactive");child.classList.add(interactiveClass);if(isDefinitionList){while(child.nextSibling){if(child.nextSibling.nodeType===1){if(child.nextSibling.tagName.toLowerCase()!=="dd"){break}child.nextSibling.classList.add("interactive");child.nextSibling.classList.add(interactiveClass)}child=child.nextSibling}}}}return interactives}for(var s=0;s<slides.length;++s){slides[s].style.zIndex=maxIndex-s;slides[s].setAttribute("data-slide-index",s);if(s>0){slides[s].style.display="none"}var interactives=0;var lists=slides[s].querySelectorAll("ul, dl");for(var l=0;l<lists.length;++l){if(lists[l].classList.contains("static")||hasListAncestor(lists[l],slides[s])){continue}interactives+=prepareInteractive(lists[l],interactives)}if(interactives){slides[s].classList.add("has-interactives");slides[s].setAttribute("data-interactives",interactives)}}function call(commands,prev,next,callback){(function run(){if(commands.length===0){return callback(prev,next)}var action=global.SlideshowAction[commands.shift()];if(action){action(prev,next,next)}else{run()}})()}function leave(prev,next,callback){if(!prev){if(callback){callback()}return}prev.classList.remove("active");step(prev,0);var commands=prev.getAttribute("data-onleave");call(commands?commands.split(","):[],prev,next,callback)}function enter(prev,next,callback){var list=0;if(!next){if(callback){callback()}return}var steps=next.getAttribute("data-steps");if(steps&&steps.length){currentSteps=steps.split(" ")}else if(interactive&&(list=parseInt(next.getAttribute("data-interactives")||"0",10))){currentSteps=[];for(var s=0;s<=list;++s){currentSteps.push("step-"+s)}}else{currentSteps=[""]}step(next,0);var commands=next.getAttribute("data-onenter");call(commands?commands.split(","):[],prev,next,shuffle);setTimeout(function(){next.classList.add("active")},10)}function shuffle(prev,next){for(var s=0;s<slides.length;++s){slides[s].style.zIndex=minIndex}if(prev){prev.style.zIndex=maxIndex-1}next.style.zIndex=maxIndex;next.style.display=""}function transition(prevIndex,nextIndex){global.location.hash="#"+current;leave(prevIndex===-1?null:slides[prevIndex],slides[nextIndex],enter)}function prev(index,cycle){if(currentStep>0){step(slides[index],currentStep-1);return index}var newIndex=index-1;return newIndex>=minIndex?newIndex:cycle?maxIndex:minIndex}function next(index,cycle){if(currentStep<currentSteps.length-1){step(slides[index],currentStep+1);return index}var newIndex=index+1;newIndex=newIndex<=maxIndex?newIndex:cycle?minIndex:maxIndex;return newIndex}function step(slide,step){if(currentSteps[currentStep]){slide.classList.remove(currentSteps[currentStep])}currentStep=step;if(currentSteps[currentStep]){slide.classList.add(currentSteps[currentStep])}}function toggleMouse(){var cursor=body.style.cursor;body.style.cursor=cursor==="none"?"crosshair":"none"}function toggleInteractive(){interactive=!interactive;d.documentElement.classList[interactive?"add":"remove"]("is-interactive");if(currentSteps.length&&currentSteps[0].length){slides[current].classList.remove(currentSteps[currentStep])}currentStep=0;currentSteps=[""];transition(current,current)}function toggleMiniatures(){var s;if(miniatures){for(s=0;s<slides.length;++s){slides[s].onclick=null}document.documentElement.classList.remove("miniatures");if(interactive){document.documentElement.classList.add("is-interactive")}}else{for(s=0;s<slides.length;++s){slides[s].onclick=function(n){return function(){toggleMiniatures();transition(current,n)}}(s)}document.documentElement.classList.remove("is-interactive");document.documentElement.classList.add("miniatures")}miniatures=!miniatures}function keyDown(e){var old=current;switch(e.keyCode){case 33:case 37:case 38:current=prev(old,CYCLE);break;case 32:case 34:case 39:case 40:case 13:current=next(old,CYCLE);break;case 27:toggleMiniatures();return;case 17:toggleMouse();return;case 16:toggleInteractive();return;default:return}if(current!==old){transition(old,current)}}if(window.location.hash){current=parseInt(location.hash.substr(1)||0,10)||current}var touches={touchstart:{x:-1,y:-1},touchmove:{x:-1,y:-1},touchend:false};var touchHandler=function(e){var touch;if(typeof e!=="undefined"){e.preventDefault();if(typeof e.touches!=="undefined"){touch=e.touches[0];switch(e.type){case"touchstart":case"touchmove":touches[e.type].x=touch.pageX;touches[e.type].y=touch.pageY;break;case"touchend":touches[e.type]=true;if(touches.touchstart.x>-1&&touches.touchmove.x>-1){var old=current;current=touches.touchstart.x<touches.touchmove.x?prev(old,CYCLE):next(old,CYCLE);if(current!==old){transition(old,current)}}}}}};d.addEventListener("touchstart",touchHandler,false);d.addEventListener("touchmove",touchHandler,false);d.addEventListener("touchend",touchHandler,false);d.addEventListener("keydown",keyDown,false);d.addEventListener("DOMContentLoaded",function(){body=document.querySelector("body");body.style.cursor="none";transition(0,current)})})(window,document);</script>
+    </body>
+</html>
