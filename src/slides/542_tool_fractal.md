@@ -1,6 +1,7 @@
 ---
 title: "Fractal als Pattern Library Tool"
 theme: ndf
+gradient: 0
 ---
 ## Tools
 

@@ -1,6 +1,7 @@
 ---
 title: "Herausforderungen bei der Kopplung von Fractal & TYPO3"
 theme: ndf
+gradient: 0
 ---
 ## Tools
 

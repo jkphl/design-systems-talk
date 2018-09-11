@@ -1,6 +1,7 @@
 ---
 title: "Individuelle Extensions für TYPO3 & Fractal"
 theme: ndf
+gradient: 0
 ---
 ## Tools
 

@@ -1,6 +1,7 @@
 ---
 title: "Komponentenentwicklung"
 theme: ndf
+gradient: 0
 ---
 ## Nutzung & Betrieb
 

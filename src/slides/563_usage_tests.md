@@ -1,6 +1,7 @@
 ---
 title: "Tests & Analyse"
 theme: ndf
+gradient: 0
 ---
 ## Nutzung & Betrieb
 

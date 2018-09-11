@@ -1,6 +1,7 @@
 ---
 title: "TYPO3 als Content Management System"
 theme: ndf
+gradient: 0
 ---
 ## Tools
 
