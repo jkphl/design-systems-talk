@@ -1,168 +1,192 @@
 .separate {
-    margin-top: 2em !important;
+	margin-top: 2em !important;
 }
 
 .slides > li {
-    ul {
-        position: relative;
-        padding-left: 1em;
-    }
+	ul {
+		position: relative;
+		padding-left: 1em;
+	}
 
-    li {
-        margin: .5em 0;
-        text-indent: 0;
+	li {
+		margin: .5em 0;
+		text-indent: 0;
 
-        &::before {
-            content: '›';
-            position: absolute;
-            left: 0;
-        }
+		&::before {
+			content: '›';
+			position: absolute;
+			left: 0;
+		}
 
-        & li {
-            padding-left: 0;
-            list-style-type: none;
+		& li {
+			padding-left: 0;
+			list-style-type: none;
 
-            &::before {
-                content: '•';
-            }
-        }
-    }
+			&::before {
+				content: '•';
+			}
+		}
+	}
 }
 
 h3 {
-    letter-spacing: .01em;
-    color: $highlight;
-    line-height: 1.2;
+	letter-spacing: .01em;
+	color: $highlight;
+	line-height: 1.2;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
 }
 
 iframe {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 strong, abbr {
-    font-weight: normal;
-    color: $highlight;
+	font-weight: normal;
+	color: $highlight;
 }
 
 abbr::after {
-    color: currentColor;
-    content: " (" attr(title) ")";
+	color: currentColor;
+	content: " (" attr(title) ")";
 }
 
 twitterwidget {
-    margin-left: auto;
-    margin-right: auto;
-    transform: scale(1.5) rotate(0deg) !important;
+	margin-left: auto;
+	margin-right: auto;
+	transform: scale(1.5) rotate(0deg) !important;
 }
 
 [data-theme=secondary] {
-    background-color: $secondary !important;
+	background-color: $secondary !important;
 }
 
 [data-theme=tertiary] {
-    background-color: $tertiary !important;
+	background-color: $tertiary !important;
 }
 
 [data-theme=info] {
-    background-color: $info !important;
+	background-color: $info !important;
 }
 
 [data-theme=white] {
-    background-color: $white !important;
+	background-color: $white !important;
 }
 
 [data-theme=mint] {
-    background-color: $mint !important;
+	background-color: $mint !important;
 }
 
 [data-theme=ndf] {
-    background-color: $ndf !important;
+	background-color: $ndf !important;
 }
 
 [data-theme=white],
 [data-theme=mint],
 [data-theme=ndf] {
-    *, a {
-        color: $dark !important;
-    }
+	*, a {
+		color: $dark !important;
+	}
 
-    h2::after {
-        background-color: $dark;
-    }
+	h2::after {
+		background-color: $dark;
+	}
 }
 
 figure {
-    width: 100%;
+	width: 100%;
 
-    & ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0;
-        padding: 0 !important;
-        list-style-type: none;
-    }
+	& figcaption {
+		padding: 0;
+		margin: 0;
+	}
 
-    & li {
-        padding: 0 !important;
-        margin: 0 0 .75em 0 !important;
-        text-indent: 0 !important;
+	&.images {
+		& ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 0;
+			padding: 0 !important;
+			list-style-type: none;
+		}
 
-        &::before {
-            display: none;
-        }
-    }
+		& li {
+			padding: 0 !important;
+			margin: 0 0 .75em 0 !important;
+			text-indent: 0 !important;
 
-    & figcaption {
-        padding: 0;
-        margin: 0;
-    }
+			&::before {
+				display: none;
+			}
+		}
+	}
+
+	&.side-by-side {
+		> p {
+			width: 80%;
+			margin-top: 1em;
+		}
+
+		@media (min-aspect-ratio: 2/3) {
+			display: flex;
+
+			> p {
+				width: 50%;
+				margin-top: 0;
+				padding-left: .5em;
+			}
+
+			> figcaption {
+				width: 50%;
+				padding-right: .5em;
+			}
+		}
+	}
 }
 
 [data-images="3"] li {
-    flex-basis: 48%;
+	flex-basis: 48%;
 
-    @media (min-aspect-ratio: 2/3) {
-        flex-basis: 31%;
-    }
+	@media (min-aspect-ratio: 2/3) {
+		flex-basis: 31%;
+	}
 }
 
 h2 small {
-    font-size: 50%;
+	font-size: 50%;
 }
 
 em {
-    color: $highlight;
-    font-weight: normal;
+	color: $highlight;
+	font-weight: normal;
 }
 
 q::before {
-    content: "»";
+	content: "»";
 }
 
 q::after {
-    content: "«";
+	content: "«";
 }
 
 .polaroid img {
-    max-width: 30vw;
-    max-height: 70vh;
-    background: white;
-    display: inline;
-    float: left;
-    margin: 0 15px 30px;
-    padding: 10px 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-    transition: all .15s linear;
-    z-index: 0;
-    position: relative;
+	max-width: 30vw;
+	max-height: 70vh;
+	background: white;
+	display: inline;
+	float: left;
+	margin: 0 15px 30px;
+	padding: 10px 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	transition: all .15s linear;
+	z-index: 0;
+	position: relative;
 }

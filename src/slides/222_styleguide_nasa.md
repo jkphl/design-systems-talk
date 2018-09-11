@@ -1,7 +1,7 @@
 ---
 title: "NASA Graphics Standards Manual"
 ---
-<figure>
+<figure class="images">
     <ul class="static" data-images="3">
         <li><img src="images/nasa_1.jpg" alt="Cover of the NASA Graphics Standards Manual, 1976"></li>
         <li><img src="images/nasa_2.jpg" alt="NASA logo usage"></li>
