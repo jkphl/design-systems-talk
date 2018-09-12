@@ -11,4 +11,3 @@ gradient: 0
     - Benennung
     - Typ & Resourcen
 - Synchronisieren der Pattern Library
-- Dokumentation & Design

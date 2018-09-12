@@ -5,10 +5,19 @@ gradient: 0
 ---
 ## Tools
 
-### Fractal als Pattern Library
+<figure class="side-by-side">
+<figcaption>
 
+### Fractal als Pattern Library
+    
 - Node.js-Anwendung → Gulp-Workflow
 - flexibel und technologieunabhängig
 - Komponenten + Dokumentation
 - Webserver & statischer Export
 - erweiterbar
+
+</figcaption>
+
+![Fractal Logo](images/fractal.svg)
+
+</figure>

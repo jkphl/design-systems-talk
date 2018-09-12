@@ -2,7 +2,7 @@
 title: "Agenda"
 theme: info
 ---
-## Inhalt
+## Was redet der eigentlich?
 
 <dl>
     <dt>1. Design System, Pattern Library & Co.</dt>

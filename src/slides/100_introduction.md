@@ -2,7 +2,7 @@
 title: "introduction"
 theme: info
 ---
-## Über mich
+## Wer ist der Kerl?
 * Erste Codezeilen als 10-Jähriger
 * Websites seit 1995
 * Ausbildung im Architektur- und Designumfeld

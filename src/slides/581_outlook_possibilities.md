@@ -5,6 +5,6 @@ title: "Ausblick & Entwicklungsmöglichkeiten"
 
 - Visual Regression Testing
 - Print-Produkte integrieren
-- Kommunikation-Features
+- Kommunikations-Features(?)
 - Anbindung an Design-Tools (Sketch, Adobe XD)
-- Progressive Enhancement Stadien
+- Progressive-Enhancement-Stadien

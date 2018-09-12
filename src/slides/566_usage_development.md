@@ -7,7 +7,7 @@ gradient: 0
 
 ### Entwicklung
 
-- Perspektiven: Template, Kontext, HTML
+- Perspektiven: Template, Kontext, HTML, Dokumentation
 - Live-Rendering via TYPO3
 - Varianten
 - Rollenverteilung

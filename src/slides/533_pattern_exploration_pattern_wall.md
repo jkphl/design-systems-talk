@@ -1,10 +1,8 @@
 ---
 title: "Pattern Wall"
-theme: ndf
 gradient: 0
+css: patternwall fullscreen-image
 ---
 ## Patterns
 
-### Pattern Wall
-
-_Bild_
+### Nürnberg Digital Festival Pattern Wall
