@@ -5,4 +5,4 @@ theme: tertiary
 ---
 ## Nutzung & Betrieb <small>(5/5)</small>
 
-Workflows & Perspektiven
+Workflows in der Entwicklung

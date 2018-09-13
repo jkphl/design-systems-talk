@@ -196,12 +196,10 @@ q::after {
 }
 
 .polaroid div {
-    //max-width: 30vw;
-    //max-height: 70vh;
     background: white;
     position: absolute;
     margin: 0 !important;
-    padding: .5em;
+    padding: .5em .5em .2em;
     text-align: center;
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -213,6 +211,8 @@ q::after {
         content: attr(title);
         font-size: 60%;
         display: block;
+        padding-top: .2em;
+        text-align: left;
     }
 
     img {
@@ -269,36 +269,73 @@ td, th {
     div {
         &:nth-of-type(1) {
             width: 40vw;
-            left: 1vw;
+            left: 2vw;
+            top: 40vh;
             transform: rotate(-2deg);
             z-index: 1;
         }
 
         &:nth-of-type(2) {
-            //width: 30vw;
-            height: 85vh;
-            top: 7vh;
+            width: 32vw;
+            height: auto;
+            bottom: 7vh;
             left: 35%;
-            //margin-left: -31.86vh !important;
             transform: rotate(2deg);
             z-index: 3;
-
-            img {
-                display: block;
-                height: 100%;
-                width: auto;
-            }
         }
 
         &:nth-of-type(3) {
-            //height: 34vh;
             width: 45vw;
             right: 2vw;
             z-index: 2;
             top: 45vh;
             transform: rotate(2deg);
+
+            &::after {
+                text-align: right;
+            }
         }
     }
 }
 
+.sharedlanguage {
+    h3 {
+        position: relative;
+        z-index: 6;
+    }
 
+    div {
+        &:nth-of-type(1) {
+            width: 38vw;
+            left: 5vw;
+            top: 30vh;
+            transform: rotate(2deg);
+            z-index: 3;
+        }
+
+        &:nth-of-type(2) {
+            width: 45vw;
+            height: auto;
+            bottom: 7vh;
+            left: 38%;
+            transform: rotate(-2deg);
+            z-index: 2;
+        }
+
+        &:nth-of-type(3) {
+            width: 30vw;
+            right: 2vw;
+            z-index: 1;
+            top: 10vh;
+            transform: rotate(2deg);
+
+            &::after {
+                text-align: right;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 3em;
+}

@@ -5,7 +5,7 @@ title: "Design-Prinzipien"
 
 ### Was bedeutet <q>gutes Design</q> für Produkt und Team?<br>Wie wird es erreicht?
 
-<dl>
+<dl class="static">
     <dt>markenbezogen</dt>
     <dd><q>Lucid, Animated, Unbreakable</q> (<a href="https://www.pinterest.com" target="_blank" rel="noopener nofollow">Pinterest</a>)</dd>
     <dt>arbeitsweisebezogen</dt>

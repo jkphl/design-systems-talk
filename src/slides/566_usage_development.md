@@ -10,4 +10,3 @@ gradient: 0
 - Perspektiven: Template, Kontext, HTML, Dokumentation
 - Live-Rendering via TYPO3
 - Varianten
-- Rollenverteilung

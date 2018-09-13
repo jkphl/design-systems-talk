@@ -11,4 +11,3 @@ gradient: 0
 * API-Anbindung an externe Event-Management-Software 
 * Interdisziplinäres Team
 * Iteratives Vorgehen
-* Vorbildrolle in der Region

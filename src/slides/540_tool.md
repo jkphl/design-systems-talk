@@ -5,4 +5,4 @@ theme: tertiary
 ---
 ## Tools <small>(3/5)</small>
 
-Komponenten-Visualisierung und mehr
+Kombination & Zusammenspiel

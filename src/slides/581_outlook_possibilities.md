@@ -3,8 +3,9 @@ title: "Ausblick & Entwicklungsmöglichkeiten"
 ---
 ## Potenzial
 
+- Anbindung an Design-Tools (Sketch, Adobe XD, etc.)
 - Visual Regression Testing
-- Print-Produkte integrieren
-- Kommunikations-Features(?)
-- Anbindung an Design-Tools (Sketch, Adobe XD)
 - Progressive-Enhancement-Stadien
+- Versionierung
+- Kommunikations-Features
+- Print-Produkte integrieren

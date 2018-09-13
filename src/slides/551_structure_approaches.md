@@ -6,5 +6,5 @@ title: "Strukturierungsansätze für Komponenten"
 ### Organisationsansätze
 
 - abhängig von Team und Tool
-- einfache Liste oder hierarchisch gegliedert
-- Sortierung nach Alphabet, Zweck, logischen Gruppierungen, etc.
+- Gliederung: einfache Liste, hierarchisch, etc.
+- Sortierung: nach Alphabet, Zweck, logischen Gruppierungen, etc.

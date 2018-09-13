@@ -5,7 +5,7 @@ title: "Durchdachte Benennung von Design Patterns"
 
 ### Durchdachte Pattern-Namen
 
-<dl>
+<dl class="static">
     <dt>spiegeln den Zweck wieder, nicht die Präsentationsform</dt>
     <dd><q>Progress toggle button</q> statt <q>Circle with a dot</q></dd>
     <dt>inspirieren zur Nutzung</dt>
