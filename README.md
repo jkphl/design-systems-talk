@@ -7,7 +7,7 @@
 
 ___
 
-Online verfügbar unter [https://jkphl.is/slides/wke2018](https://jkphl.is/slides/wke2018).
+Die Vortragsfolien sind online verfügbar unter [https://jkphl.is/slides/wke2018](https://jkphl.is/slides/wke2018). Eine Videoaufzeichnung des Vortrags findet sich im Videoportal der Uni Erlangen unter [https://www.video.uni-erlangen.de/clip/id/9496](https://www.video.uni-erlangen.de/clip/id/9496). 
 
 #### Tastaturkürzel
 
