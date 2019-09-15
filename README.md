@@ -2,17 +2,17 @@
 
 ### Überlebenshandbuch für und mit Pattern Libraries
 
-> Webkongress Erlangen 2018<br/>
+> JoomlaDay™ Deutschland 2019<br/>
 > Vortragsfolien (Deutsch)
 
 ___
 
-Online verfügbar unter [https://jkphl.is/slides/wke2018](https://jkphl.is/slides/wke2018).
+Online verfügbar unter [https://jkphl.is/slides/jd19de/design](https://jkphl.is/slides/jd19de/design).
 
 #### Tastaturkürzel
 
 * `Bild Oben`, `←`, `↑`: Vorherige Folie
 * `Leerzeichen`, `Zeilenumbruch`, `Bild Oben`, `→`, `↓`: Nächste Folie
-* `Strg`: Mauszeiger ein- / ausblenden
-* `Hochstelltaste`: Interaktiven Modus aktivieren / deaktivieren (schrittweises Einblenden von Listenelementen)
+* `c`: Mauszeiger ein- / ausblenden
+* `i`: Interaktiven Modus aktivieren / deaktivieren (schrittweises Einblenden von Listenelementen)
 * `Esc`: Folienübersicht
