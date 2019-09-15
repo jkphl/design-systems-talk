@@ -7,7 +7,7 @@
 
 ___
 
-Online verfügbar unter [https://jkphl.is/slides/jd19de/design](https://jkphl.is/slides/jd19de/design).
+Die Vortragsfolien sind online verfügbar unter [https://jkphl.is/slides/jd19de/design](https://jkphl.is/slides/jd19de/design). Eine Videoaufzeichnung des Vortrags findet sich auf Youtube unter [https://youtu.be/ddUs73l7Aw4](https://youtu.be/ddUs73l7Aw4). 
 
 #### Tastaturkürzel
 
